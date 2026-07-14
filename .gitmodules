@@ -1,0 +1,3 @@
+[submodule "third_party/MNIST_DNN_RTL"]
+	path = third_party/MNIST_DNN_RTL
+	url = https://github.com/Zooonuu/MNIST_DNN_RTL.git

@@ -1,0 +1,28 @@
+# ORFS generated outputs
+logs/
+objects/
+results/
+reports/
+
+# Physical-design databases
+*.odb
+*.def
+*.spef
+*.sdf
+*.gds
+*.gdsii
+*.guide
+
+# Temporary and cache files
+tmp/
+cache/
+*.log
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# VS Code local state
+.vscode/*.log

@@ -1,0 +1,70 @@
+{
+    "version": "2.0.0",
+
+    "tasks": [
+        {
+            "label": "ASIC: Check Inputs",
+            "type": "shell",
+            "command": "${workspaceFolder}/scripts/check_inputs.sh",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+
+        {
+            "label": "ASIC: Clean Baseline Synthesis",
+            "type": "shell",
+            "command": "${workspaceFolder}/scripts/orfs.sh",
+            "args": [
+                "FLOW_VARIANT=baseline_10ns",
+                "clean_synth"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+
+        {
+            "label": "ASIC: Run Baseline Synthesis",
+            "type": "shell",
+            "command": "${workspaceFolder}/scripts/orfs.sh",
+            "args": [
+                "FLOW_VARIANT=baseline_10ns",
+                "synth"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+
+        {
+            "label": "ASIC: Run Full Baseline Flow",
+            "type": "shell",
+            "command": "${workspaceFolder}/scripts/orfs.sh",
+            "args": [
+                "FLOW_VARIANT=baseline_10ns"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        },
+
+        {
+            "label": "ASIC: Open Final GUI",
+            "type": "shell",
+            "command": "${workspaceFolder}/scripts/orfs.sh",
+            "args": [
+                "FLOW_VARIANT=baseline_10ns",
+                "gui_final"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

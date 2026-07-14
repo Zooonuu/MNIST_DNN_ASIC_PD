@@ -1,0 +1,31 @@
+{
+    "files.associations": {
+        "*.v": "verilog",
+        "*.sv": "systemverilog",
+        "*.sdc": "tcl",
+        "*.tcl": "tcl",
+        "*.ys": "tcl",
+        "config.mk": "makefile"
+    },
+
+    "editor.rulers": [
+        100
+    ],
+
+    "editor.formatOnSave": false,
+
+    "files.exclude": {
+        "**/logs": true,
+        "**/objects": true,
+        "**/results": true,
+        "**/reports": true
+    },
+
+    "search.exclude": {
+        "**/logs": true,
+        "**/objects": true,
+        "**/results": true,
+        "**/reports": true,
+        "**/third_party/**/.git": true
+    }
+}
